@@ -1,0 +1,227 @@
+{
+  "_comment": "Default page structure and section patterns by business type category. Used by /localbiz:generate-spec to make sensible defaults without guessing.",
+
+  "categories": {
+    "trade-emergency": {
+      "_description": "Plumber, electrician, HVAC, roofer, locksmith, garage door — emergency + scheduled service",
+      "_examples": ["plumber", "electrician", "hvac", "roofer", "locksmith", "garage-door", "pest-control"],
+      "schemaType": "HomeAndConstructionBusiness",
+      "heroEmphasis": "emergency-availability",
+      "primaryCTA": { "label": "Get Free Quote", "href": "/contact#quote" },
+      "secondaryCTA": { "label": "Call Now", "href": "tel:" },
+      "trustBarDefaults": ["Licensed & Insured", "Free Estimates", "Same-Day Service Available", "100% Satisfaction Guaranteed"],
+      "defaultPages": ["home", "services", "about", "service-areas", "contact"],
+      "servicePageTemplate": "trade-service",
+      "homeSections": [
+        "hero",
+        "trust-bar",
+        "services-grid",
+        "how-it-works",
+        "testimonials",
+        "service-areas",
+        "faq",
+        "cta-band",
+        "contact-block"
+      ],
+      "serviceSections": [
+        "hero",
+        "service-detail",
+        "benefits",
+        "how-it-works",
+        "faq",
+        "testimonials",
+        "cta-band"
+      ]
+    },
+
+    "home-improvement": {
+      "_description": "Painter, landscaper, flooring, contractor, remodeler, cleaning, movers",
+      "_examples": ["painter", "landscaper", "flooring", "contractor", "remodeler", "cleaning", "movers", "junk-removal"],
+      "schemaType": "HomeAndConstructionBusiness",
+      "heroEmphasis": "quality-results",
+      "primaryCTA": { "label": "Get Free Estimate", "href": "/contact#quote" },
+      "secondaryCTA": { "label": "See Our Work", "href": "/gallery" },
+      "trustBarDefaults": ["Licensed & Insured", "Free Estimates", "5-Star Rated", "Locally Owned"],
+      "defaultPages": ["home", "services", "gallery", "about", "service-areas", "contact"],
+      "servicePageTemplate": "improvement-service",
+      "homeSections": [
+        "hero",
+        "trust-bar",
+        "services-grid",
+        "gallery",
+        "testimonials",
+        "how-it-works",
+        "service-areas",
+        "faq",
+        "cta-band",
+        "contact-block"
+      ],
+      "serviceSections": [
+        "hero",
+        "service-detail",
+        "gallery",
+        "benefits",
+        "faq",
+        "testimonials",
+        "cta-band"
+      ]
+    },
+
+    "health-wellness": {
+      "_description": "Med spa, chiropractor, dentist, massage therapist, physical therapy",
+      "_examples": ["med-spa", "chiropractor", "dentist", "massage", "physical-therapy", "acupuncture"],
+      "schemaType": "MedicalBusiness",
+      "heroEmphasis": "results-and-credentials",
+      "primaryCTA": { "label": "Book Appointment", "href": "/contact#booking" },
+      "secondaryCTA": { "label": "Learn More", "href": "/services" },
+      "trustBarDefaults": ["Board Certified", "Accepting New Patients", "Flexible Scheduling", "Insurance Accepted"],
+      "defaultPages": ["home", "services", "team", "before-after", "contact"],
+      "servicePageTemplate": "health-service",
+      "homeSections": [
+        "hero",
+        "trust-bar",
+        "services-grid",
+        "about",
+        "before-after",
+        "testimonials",
+        "faq",
+        "cta-band",
+        "contact-block"
+      ],
+      "serviceSections": [
+        "hero",
+        "service-detail",
+        "before-after",
+        "benefits",
+        "faq",
+        "testimonials",
+        "cta-band"
+      ]
+    },
+
+    "service": {
+      "_description": "Auto detailer, pool service, pressure washing, window cleaning, appliance repair",
+      "_examples": ["auto-detailer", "pool-service", "pressure-washing", "window-cleaning", "appliance-repair"],
+      "schemaType": "LocalBusiness",
+      "heroEmphasis": "convenience-and-quality",
+      "primaryCTA": { "label": "Get a Quote", "href": "/contact#quote" },
+      "secondaryCTA": { "label": "Call Now", "href": "tel:" },
+      "trustBarDefaults": ["Fully Insured", "Free Quotes", "Satisfaction Guaranteed", "Locally Owned"],
+      "defaultPages": ["home", "services", "gallery", "about", "contact"],
+      "servicePageTemplate": "standard-service",
+      "homeSections": [
+        "hero",
+        "trust-bar",
+        "services-grid",
+        "gallery",
+        "testimonials",
+        "how-it-works",
+        "faq",
+        "cta-band",
+        "contact-block"
+      ],
+      "serviceSections": [
+        "hero",
+        "service-detail",
+        "gallery",
+        "faq",
+        "testimonials",
+        "cta-band"
+      ]
+    }
+  },
+
+  "businessTypeMap": {
+    "plumber": "trade-emergency",
+    "plumbing": "trade-emergency",
+    "electrician": "trade-emergency",
+    "electrical": "trade-emergency",
+    "hvac": "trade-emergency",
+    "air conditioning": "trade-emergency",
+    "heating and cooling": "trade-emergency",
+    "roofer": "trade-emergency",
+    "roofing": "trade-emergency",
+    "garage door": "trade-emergency",
+    "locksmith": "trade-emergency",
+    "pest control": "trade-emergency",
+    "exterminator": "trade-emergency",
+    "painter": "home-improvement",
+    "painting": "home-improvement",
+    "landscaper": "home-improvement",
+    "landscaping": "home-improvement",
+    "lawn care": "home-improvement",
+    "flooring": "home-improvement",
+    "contractor": "home-improvement",
+    "remodeler": "home-improvement",
+    "remodeling": "home-improvement",
+    "cleaning": "home-improvement",
+    "maid": "home-improvement",
+    "movers": "home-improvement",
+    "moving": "home-improvement",
+    "junk removal": "home-improvement",
+    "med spa": "health-wellness",
+    "medspa": "health-wellness",
+    "chiropractor": "health-wellness",
+    "chiropractic": "health-wellness",
+    "dentist": "health-wellness",
+    "dental": "health-wellness",
+    "massage": "health-wellness",
+    "physical therapy": "health-wellness",
+    "auto detail": "service",
+    "auto detailing": "service",
+    "car detailing": "service",
+    "pool service": "service",
+    "pool cleaning": "service",
+    "pressure washing": "service",
+    "power washing": "service",
+    "window cleaning": "service",
+    "appliance repair": "service"
+  },
+
+  "seoSchemaTypeMap": {
+    "plumber": "Plumber",
+    "electrician": "Electrician",
+    "hvac": "HVACBusiness",
+    "roofer": "RoofingContractor",
+    "locksmith": "Locksmith",
+    "painter": "HousePainter",
+    "landscaper": "LandscapingBusiness",
+    "cleaning": "HouseCleaning",
+    "movers": "MovingCompany",
+    "med spa": "MedicalBusiness",
+    "chiropractor": "MedicalBusiness",
+    "dentist": "Dentist",
+    "auto detail": "AutoRepair"
+  },
+
+  "defaultColorsByCategory": {
+    "trade-emergency": {
+      "primaryColor": "#1a3a5c",
+      "secondaryColor": "#f59e0b",
+      "accentColor": "#e5e7eb",
+      "backgroundColor": "#ffffff",
+      "textColor": "#111827"
+    },
+    "home-improvement": {
+      "primaryColor": "#166534",
+      "secondaryColor": "#f59e0b",
+      "accentColor": "#f0fdf4",
+      "backgroundColor": "#ffffff",
+      "textColor": "#111827"
+    },
+    "health-wellness": {
+      "primaryColor": "#1e3a5f",
+      "secondaryColor": "#8b5cf6",
+      "accentColor": "#f5f3ff",
+      "backgroundColor": "#ffffff",
+      "textColor": "#111827"
+    },
+    "service": {
+      "primaryColor": "#1e40af",
+      "secondaryColor": "#f59e0b",
+      "accentColor": "#eff6ff",
+      "backgroundColor": "#ffffff",
+      "textColor": "#111827"
+    }
+  }
+}

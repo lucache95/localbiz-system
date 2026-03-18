@@ -1,0 +1,65 @@
+{
+  "_comment": "This is the schema for the client intake form on your website. Use these field names when building your form. All fields are optional except where noted.",
+
+  "businessName": "",
+  "businessType": "",
+  "tagline": "",
+
+  "phone": "",
+  "email": "",
+  "address": "",
+  "city": "",
+  "state": "",
+  "zip": "",
+  "serviceAreas": "",
+
+  "primaryServices": "",
+  "secondaryServices": "",
+  "priceRange": "",
+  "offers": "",
+
+  "facebook": "",
+  "instagram": "",
+  "googleBusiness": "",
+  "yelp": "",
+  "linkedin": "",
+
+  "yearsInBusiness": null,
+  "reviewCount": null,
+  "averageRating": null,
+  "certifications": "",
+  "insurance": "",
+  "license": "",
+  "awards": "",
+
+  "colorPreferences": "",
+  "colorDislikes": "",
+  "tonePreferences": "",
+  "stylePreferences": "",
+  "fontPreferences": "",
+
+  "exampleSites": "",
+  "competitors": "",
+  "designDislikes": "",
+
+  "existingSiteUrl": "",
+  "existingSiteLikes": "",
+  "existingSiteDislikes": "",
+
+  "uniqueSellingPoints": "",
+  "customerObjections": "",
+  "targetCustomer": "",
+  "primaryGoal": "",
+  "mustHavePages": "",
+  "mustHaveFeatures": "",
+
+  "heroHeadline": "",
+  "testimonials": "",
+  "faqsRaw": "",
+  "processDescription": "",
+
+  "urgency": "flexible",
+  "targetLaunchDate": "",
+  "additionalNotes": "",
+  "submittedAt": ""
+}

@@ -1,0 +1,65 @@
+{
+  "_comment": "Example intake form for a plumbing company — demonstrates a typical messy-but-workable submission",
+
+  "businessName": "Priority Plumbing Solutions",
+  "businessType": "plumber",
+  "tagline": "",
+
+  "phone": "(972) 555-0192",
+  "email": "mike@priorityplumbing.com",
+  "address": "1847 Commerce Dr",
+  "city": "Plano",
+  "state": "TX",
+  "zip": "75023",
+  "serviceAreas": "Plano, Frisco, Allen, McKinney, Richardson, Garland, Dallas",
+
+  "primaryServices": "Drain cleaning, water heater installation and repair, leak detection, pipe repair, toilet repair and replacement, slab leak repair",
+  "secondaryServices": "Garbage disposal, faucet repair, water softeners, bathroom remodels",
+  "priceRange": "$$",
+  "offers": "$50 off any repair over $300 - mention our website",
+
+  "facebook": "https://facebook.com/priorityplumbingplano",
+  "instagram": "",
+  "googleBusiness": "https://g.co/kgs/priorityplumbing",
+  "yelp": "",
+  "linkedin": "",
+
+  "yearsInBusiness": 12,
+  "reviewCount": 247,
+  "averageRating": 4.9,
+  "certifications": "Master Plumber License TX #12345, PHCC member",
+  "insurance": "Fully insured - general liability $1M",
+  "license": "TX Master Plumber #12345",
+  "awards": "Angi Super Service Award 2023",
+
+  "colorPreferences": "Blue and white, maybe some orange or yellow as accent. Professional but not boring. I like navy.",
+  "colorDislikes": "Nothing too bright or neon. No red.",
+  "tonePreferences": "Professional but friendly. Like a trusted neighbor who happens to be an expert plumber.",
+  "stylePreferences": "Clean and modern. Not too corporate. I want it to feel like a premium local company, not a big franchise.",
+  "fontPreferences": "",
+
+  "exampleSites": "https://www.rotorouter.com (I like how clear they are but I want something more local-feeling), https://www.benjaminfranklinplumbing.com",
+  "competitors": "Rescue Rooter, ARS, a bunch of small local guys",
+  "designDislikes": "Cluttered, too many popups, ugly stock photos of pipes",
+
+  "existingSiteUrl": "https://priorityplumbingplano.com",
+  "existingSiteLikes": "My logo and phone number are on there",
+  "existingSiteDislikes": "It's from like 2015, doesn't show on phones right, no one can find us on Google, the forms don't work, it looks unprofessional",
+
+  "uniqueSellingPoints": "We show up same-day for emergencies, 12 years in Plano area, Master plumber does the work not subs, upfront pricing no surprises, we clean up after ourselves",
+  "customerObjections": "Price — people always worry about getting ripped off by plumbers. Also worry about damage, unknown contractors in their house.",
+  "targetCustomer": "Homeowners in Plano/Frisco/Allen area, 35-65 age range, own their homes, want reliable professional work",
+  "primaryGoal": "generate leads - phone calls and form submissions",
+  "mustHavePages": "Home, Services, About, Contact",
+  "mustHaveFeatures": "Click to call, quote form, service areas list, reviews showing somewhere",
+
+  "heroHeadline": "",
+  "testimonials": "Mike showed up in 2 hours when our water heater burst. Fixed it the same day. Incredible service. - Sarah T., Plano\n\nFinally found a plumber I can trust. Used them 3 times now, always fair price and great work. - James K.\n\nThey found a slab leak 2 other companies missed. Saved us thousands. - The Hendersons, Frisco",
+  "faqsRaw": "How fast can you come out? Same day for emergencies, next day for everything else usually.\nDo you give free estimates? Yes for most jobs.\nAre you licensed? Yes, Master Plumber license in TX.",
+  "processDescription": "Call or request online → we call you back to understand the issue → show up same day or next → diagnose and give upfront price → fix it right → clean up and follow up",
+
+  "urgency": "asap",
+  "targetLaunchDate": "3 weeks",
+  "additionalNotes": "I really want people to be able to find us for 'plumber Plano TX' and 'emergency plumber Frisco'. Also want to show my reviews more. Happy to get on a call to review it before launch.",
+  "submittedAt": "2026-03-15T10:23:00Z"
+}
