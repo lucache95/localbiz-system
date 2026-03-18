@@ -83,7 +83,7 @@ localbiz-system/
 
 **Client projects:**
 ```
-~/clawd/projects/jaron-websites/[client-id]/   ← one folder per client, git repo
+[PROJECTS_DIR]/[client-id]/   ← one folder per client, git repo
 ├── _intake/                                    ← raw inputs go here
 │   ├── form.json
 │   └── assets/
@@ -111,7 +111,7 @@ localbiz-system/
 - Empty — run from within a client project folder.
 
 **What it does:**
-1. If given a raw folder: creates `~/clawd/projects/jaron-websites/[client-id]/`, copies files, inits git
+1. If given a raw folder: creates `[PROJECTS_DIR]/[client-id]/`, copies files, inits git
 2. Classifies every file (form, notes, logo, photo, video, doc, pdf, etc.)
 3. Parses `form.json` using the IntakeForm schema
 4. Reads all text documents and extracts business context
@@ -672,7 +672,7 @@ The system uses 4 categories with preconfigured defaults. The `business-type-pro
 ```
 Step 1: Drop client files and run intake
   /localbiz:intake ~/Downloads/acme-plumbing-files/
-  → Auto-creates ~/clawd/projects/jaron-websites/acme-plumbing/
+  → Auto-creates [PROJECTS_DIR]/acme-plumbing/
   → Copies all files to _intake/assets/
   → Inits git in project root
   → Produces _context/CONTEXT.json + QUESTIONS.md

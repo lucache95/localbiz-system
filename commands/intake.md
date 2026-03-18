@@ -5,7 +5,7 @@ You are running `/localbiz:intake` — the context ingestion command for a local
 ## Arguments
 $ARGUMENTS — one of:
 - A path to any folder of client files (e.g., `~/Downloads/acme-plumbing/` or a Google Drive download folder)
-- A path to an existing client project folder (e.g., `~/clawd/projects/jaron-websites/acme-plumbing`)
+- A path to an existing client project folder (e.g., `[PROJECTS_DIR]/acme-plumbing`)
 - Empty — run from within an existing client project folder
 
 ---
@@ -16,7 +16,7 @@ $ARGUMENTS — one of:
 - This is the "drop folder" case. The user pointed at their Downloads or a Google Drive export.
 - Scan for a form file (`form.json`, `*.json`) or any document to detect the business name.
 - Derive `[client-id]` from the business name as kebab-case (e.g., "Acme Plumbing" → `acme-plumbing`).
-- Create the project at `~/clawd/projects/jaron-websites/[client-id]/`.
+- Create the project at `[PROJECTS_DIR]/[client-id]/`.
 - Create the folder structure: `_intake/`, `_intake/assets/`, `_context/`, `_spec/`.
 - Copy files from the source folder into the project:
   - Files named `form.json`, `submission.json`, or `form.txt` → `_intake/form.json`
@@ -25,9 +25,9 @@ $ARGUMENTS — one of:
   - All `.mp4`, `.mov` → `_intake/assets/`
   - Everything else → `_intake/assets/`
 - Initialize git in the project root and make an initial commit of `_intake/`.
-- Report: "Created project at `~/clawd/projects/jaron-websites/[client-id]/`. Copied N files."
+- Report: "Created project at `[PROJECTS_DIR]/[client-id]/`. Copied N files."
 
-**Case B — $ARGUMENTS is an existing jaron-websites project folder:**
+**Case B — $ARGUMENTS is an existing client project folder:**
 - Use that as the project root. Look for `_intake/` inside it.
 
 **Case C — $ARGUMENTS is empty:**

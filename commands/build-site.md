@@ -72,13 +72,13 @@ For **RESEND_API_KEY**: if the user has already set it as a shell environment va
 
 ## STEP 2: Create the project if needed
 
-**Client projects always live under `~/clawd/projects/jaron-websites/`.**
+**Read the configured projects directory from `~/.claude/localbiz/config.json` → `projectsDir`.** This is set during `./install.sh`. Use it as the base for all client project paths.
 
 Determine the project folder name from `meta.clientId` (kebab-case, e.g. `acme-plumbing`).
 
 If the current directory IS already a client project (i.e., `_spec/SPEC.json` is at `./`), use `.` as the project root.
 
-Otherwise, confirm the project folder: `~/clawd/projects/jaron-websites/[clientId]/`
+Otherwise, confirm the project folder: `[PROJECTS_DIR]/[clientId]/`
 
 The site goes in `[project-root]/site/`.
 
@@ -420,7 +420,7 @@ git commit -m "feat: generate [businessName] site from spec"
 ```
 ## Site Built — [Business Name]
 
-**Location:** ~/clawd/projects/jaron-websites/[clientId]/site/
+**Location:** [PROJECTS_DIR]/[clientId]/site/
 
 **Pages generated:**
 - / (homepage)
@@ -435,7 +435,7 @@ git commit -m "feat: generate [businessName] site from spec"
 **Schema:** [schemaType]
 
 **To run locally:**
-cd ~/clawd/projects/jaron-websites/[clientId]/site
+cd [PROJECTS_DIR]/[clientId]/site
 cp .env.example .env.local
 # Add your RESEND_API_KEY to .env.local
 npm run dev

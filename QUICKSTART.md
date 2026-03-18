@@ -18,7 +18,7 @@ Drop everything into a folder (Google Drive download, Downloads folder, wherever
 
 That's it. The command will:
 - Detect the business name from the files
-- Create `~/clawd/projects/jaron-websites/acme-plumbing/` automatically
+- Create `[PROJECTS_DIR]/acme-plumbing/` automatically
 - Copy all files into `_intake/assets/`
 - Initialize git in the project
 - Run the full intake analysis
@@ -106,7 +106,7 @@ cd ~/clawd/projects/jaron-websites/[client-id]
 
 ## Where do client projects live?
 
-Always: `~/clawd/projects/jaron-websites/[client-id]/`
+Always: `[PROJECTS_DIR]/[client-id]/`
 
 ```
 jaron-websites/

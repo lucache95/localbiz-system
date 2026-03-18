@@ -10,8 +10,8 @@ End-to-end process documentation for all production scenarios.
 
 ```
 Step 1: Create project folder
-  mkdir -p ~/clawd/projects/jaron-websites/[client-name]/_intake/assets
-  cd ~/clawd/projects/jaron-websites/[client-name]
+  mkdir -p [PROJECTS_DIR]/[client-name]/_intake/assets
+  cd [PROJECTS_DIR]/[client-name]
 
 Step 2: Add client inputs
   - Copy form submission → _intake/form.json
@@ -99,7 +99,7 @@ Step 5-10: Same as Workflow 1
 
 ```
 Step 1: Navigate to the project
-  cd ~/clawd/projects/jaron-websites/[client-name]
+  cd [PROJECTS_DIR]/[client-name]
 
 Step 2: Run revise with the request
   /localbiz:revise "[exact change request from client]"
@@ -214,7 +214,7 @@ If user wants to proceed without resolving: intake uses the `form` value with `c
 
 All client projects live under:
 ```
-~/clawd/projects/jaron-websites/[client-id]/
+[PROJECTS_DIR]/[client-id]/
 ```
 
 Where `[client-id]` is kebab-case from the business name:
@@ -232,7 +232,7 @@ Recommended GitHub remote naming: `[client-id]-website`
 For larger site builds, you can use GSD to track phases:
 
 ```
-cd ~/clawd/projects/jaron-websites/[client-id]
+cd [PROJECTS_DIR]/[client-id]
 /gsd:new-project
 ```
 

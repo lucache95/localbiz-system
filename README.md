@@ -4,12 +4,21 @@ A reusable system for generating high-quality local business websites from messy
 
 ## Setup
 
+Clone anywhere you like:
+
 ```bash
-git clone https://github.com/YOUR_ORG/localbiz-system.git ~/clawd/localbiz-system
-cd ~/clawd/localbiz-system
+git clone https://github.com/lucache95/localbiz-system.git
+cd localbiz-system
 chmod +x install.sh
 ./install.sh
 ```
+
+The install script will:
+- Ask where you want client projects to live (default: `~/localbiz-projects`)
+- Symlink the commands and resources into `~/.claude/`
+- Write `~/.claude/localbiz/config.json` with your projects directory
+
+Re-run `./install.sh` any time to update the config.
 
 ## Quick Start
 
@@ -64,16 +73,17 @@ localbiz-system/
 
 ## Client Projects
 
-Every client project lives at:
+Each client project is created in your configured `projectsDir` (set during install):
+
 ```
-~/clawd/projects/jaron-websites/[client-id]/
+[projectsDir]/[client-id]/
 ├── _intake/       ← raw client files
 ├── _context/      ← normalized context (CONTEXT.json, QUESTIONS.md)
 ├── _spec/         ← site spec (SPEC.json)
 └── site/          ← generated Next.js site
 ```
 
-Each project is its own git repo.
+Each project is its own git repo. The `projectsDir` is stored in `~/.claude/localbiz/config.json`.
 
 ## Stack
 
